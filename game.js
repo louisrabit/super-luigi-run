@@ -13,7 +13,7 @@ class Game {
       this.life = 10
       const img = new Image();
       img.addEventListener('load', ()=> {})
-      img.src = './image1.jpg'
+      img.src = './docs/assets/images/image1.jpg'
       this.img = img;
       //this.life = 5//
       //this.floor = floor//
@@ -64,10 +64,10 @@ class Game {
       this.frames += 1;
   //interval between enemies
       if (this.frames % 300 === 0) {
-        this.obstacles.push(new Circle(120 , 10,  Math.floor(Math.random()* 3 + 1), this.ctx, 'image2.png'));
-        this.obstacles.push(new Circle(240, 10, Math.floor(Math.random()* 2 + 2),  this.ctx, 'image2.png'));
-        this.obstacles.push(new Circle(350, 10, Math.floor(Math.random()* 3 + 3),  this.ctx, 'image2.png'));
-        this.obstacles.push(new Circle(480, 10, Math.floor(Math.random()* 2 + 1),  this.ctx, 'image2.png'));
+        this.obstacles.push(new Circle(120 , 10,  Math.floor(Math.random()* 3 + 1), this.ctx, "./docs/assets/images/enemy.png"));
+        this.obstacles.push(new Circle(240, 10, Math.floor(Math.random()* 2 + 2),  this.ctx, "./docs/assets/images/enemy.png"));
+        this.obstacles.push(new Circle(350, 10, Math.floor(Math.random()* 3 + 3),  this.ctx, "./docs/assets/images/enemy.png"));
+        this.obstacles.push(new Circle(480, 10, Math.floor(Math.random()* 2 + 1),  this.ctx, "./docs/assets/images/enemy.png"));
   
       }
 

@@ -9,14 +9,14 @@ const cWidth = canvas.width;
 const cHeight = canvas.height;
 
 //Creating the player
-const player = new Component(40, 60, 'black', 320, 540, ctx  /*image*/  );
+const player = new Component(40, 60, 'black', 320, 540, ctx  , /*image*/ );
 let canvasPosition = canvas.getBoundingClientRect();
 
 const bgImg = new Image();
 bgImg.addEventListener('load', ()=> {   
   ctx.drawImage(bgImg, 0, 0, cWidth, cHeight)
 })
-bgImg.src = './image1.jpg'
+bgImg.src = "./docs/assets/images/image1.jpg"
 
 
 

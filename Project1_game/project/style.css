@@ -1,0 +1,47 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+
+display: flex;
+justify-content: left;
+ align-items: center;
+/* background-image: url("luidgi.jpg");  */
+}
+
+.backgroundImg {
+   
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+canvas {
+    position: absolute;
+    width: 700px;
+    height: 600px;
+    border: 10px solid black;
+}
+
+
+
+button{ 
+    top: 45%;
+    left: 50.7%;
+    height: 35px;
+    width: 80px;
+   background-color: rgb(216, 13, 13);
+  position: absolute;
+  
+} 
+
+
+
+
+ 
+

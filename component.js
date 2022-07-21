@@ -1,5 +1,5 @@
 class Component {
-    constructor(width, height, color, x, y, ctx /* , url */) {
+    constructor(width, height, color, x, y, ctx , url ) {
       this.width = width;
       this.height = height;
       this.color = color;
@@ -8,10 +8,14 @@ class Component {
       this.ctx = ctx;
       this.speedX = 0;
       this.speedY = 0;
-    /*   const img = new Image();
+     const img = new Image();
       img.addEventListener('load', ()=> {})
-      img.src = url
-      this.img = img; */
+      img.src =  ("./docs/assets/images/player.png");
+      this.img = img; 
+      const tube = new Image()
+      img.addEventListener('load', () => {})
+      tube.src = "./docs/assets/images/tube.png"
+      this.tube = tube;
     }
   
 
@@ -23,15 +27,16 @@ class Component {
   
     draw() {
       this.ctx.fillStyle = this.color;
-      this.ctx.fillRect(this.x, this.y, this.width, this.height);
-      //this.ctx.drawImage(this.img, this.x, this.y, this.width, this.height)
-
+      //this.ctx.fillRect(this.x, this.y, this.width, this.height);
+      this.ctx.drawImage(this.img, this.x, this.y, this.width, this.height)
 
       
-          ctx.fillRect(115, 0, 50, 80);
-          ctx.fillRect(230, 0, 50, 80);
-          ctx.fillRect(340, 0, 50, 80);
-          ctx.fillRect(470, 0, 50, 80);
+      
+          ctx.drawImage(this.tube, 115, 0, 50, 80);
+          ctx.drawImage(this.tube, 230, 0, 50, 80);
+          ctx.drawImage(this.tube, 340, 0, 50, 80);
+          ctx.drawImage(this.tube, 470, 0, 50, 80);
+          
         }
   
     left() {
