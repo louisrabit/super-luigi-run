@@ -10,10 +10,10 @@ class Component {
       this.speedY = 0;
      const img = new Image();
       img.addEventListener('load', ()=> {})
-      img.src =  ("./docs/assets/images/player.png");
+      img.src = "./docs/assets/images/player.png";
       this.img = img; 
       const tube = new Image()
-      img.addEventListener('load', () => {})
+      tube.addEventListener('load', () => {})
       tube.src = "./docs/assets/images/tube.png"
       this.tube = tube;
     }
